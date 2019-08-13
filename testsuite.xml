@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="Mea Test Suite" verbose="3" parallel="tests"
+	thread-count="1">
+
+	<listeners>
+		<listener class-name="com.utils.RetryFailedTestsListner" />
+		<listener class-name="com.utils.TakeScreenshotListner" />
+	</listeners>
+
+	<parameter name="browserName" value="fire"></parameter>
+
+	<test name="LoginTest">
+		<classes>
+			<class name="com.tests.LoginTest"></class>
+		</classes>
+	</test>
+
+
+</suite> 
+ 
