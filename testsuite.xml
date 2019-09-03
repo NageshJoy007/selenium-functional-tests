@@ -3,8 +3,11 @@
 	thread-count="1">
 
 	<listeners>
-		<listener class-name="com.utils.RetryFailedTestsListner" />
+	
 		<listener class-name="com.utils.TakeScreenshotListner" />
+	
+		<listener class-name="com.utils.RetryFailedTestsListner" />
+		
 	</listeners>
 
 	<!-- <parameter name="browserName" value="firefox"></parameter> -->

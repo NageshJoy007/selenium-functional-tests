@@ -9,7 +9,7 @@
 
 	<dependencies>
 	
-	<!-- To automate your browser or web application -->
+	<!-- To automate your web application -->
 	
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
@@ -39,7 +39,7 @@
 			<version>6.9.9</version>
 		</dependency>
 	
-	<!-- To manage different browser related dependencies -->
+	<!-- To manage different browser related driver dependencies -->
 	
 		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
@@ -49,8 +49,11 @@
 
 
 	</dependencies>
-
+	
 	<build>
+	
+	<!-- PlugIns to build, execute your project, and to generate reports -->
+	
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
