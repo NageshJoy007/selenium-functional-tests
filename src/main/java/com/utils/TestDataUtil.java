@@ -2,6 +2,7 @@ package com.utils;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -17,6 +18,14 @@ public class TestDataUtil {
 				System.getProperty("user.dir") + "//src//test//resources//TestData//Data.xlsx", "loginTest");
 		return (retObjArr);
 	}
+	
+	@DataProvider(name = "productSearchTest")
+	public static Object[][] productSearchTestData() throws Exception {
+		Object[][] retObjArr = readData(
+				System.getProperty("user.dir") + "//src//test//resources//TestData//Data.xlsx", "productSearchTest");
+		return (retObjArr);
+	}
+	
 	
 	public static String[][] readData(String filePath, String sheetName) throws IOException {
 		FileInputStream fis = new FileInputStream(filePath);

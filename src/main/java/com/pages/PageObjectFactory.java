@@ -9,6 +9,7 @@ public class PageObjectFactory {
 	FooterSection footerSection;
 	HomePage homePage;
 	LoginPage loginPage;
+	SearchResultsPage searchResultsPage;
 	
 	WebDriver driver;
 	public PageObjectFactory(WebDriver driver){
@@ -39,7 +40,11 @@ public class PageObjectFactory {
 			loginPage=new LoginPage(driver);
 		}return loginPage;
 	}
-	
+	public SearchResultsPage searchResultsPage(){
+		if(null==searchResultsPage){
+			searchResultsPage=new SearchResultsPage(driver);
+		}return searchResultsPage;
+	}
 	
 	
 }

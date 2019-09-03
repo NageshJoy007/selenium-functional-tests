@@ -7,13 +7,22 @@
 		<listener class-name="com.utils.TakeScreenshotListner" />
 	</listeners>
 
-	<parameter name="browserName" value="fire"></parameter>
+	<!-- <parameter name="browserName" value="firefox"></parameter> -->
+	
+	<parameter name="browserName" value="chrome"></parameter>
 
 	<test name="LoginTest">
 		<classes>
 			<class name="com.tests.LoginTest"></class>
 		</classes>
 	</test>
+	
+	<test name="ProductSearchTest">
+		<classes>
+			<class name="com.tests.ProductSearchTest"></class>
+		</classes>
+	</test>
+
 
 
 </suite> 

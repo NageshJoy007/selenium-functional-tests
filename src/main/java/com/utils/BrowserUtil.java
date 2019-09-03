@@ -24,7 +24,7 @@ public class BrowserUtil {
 		if (browserName.toLowerCase().startsWith("c")) {
 
 			ChromeOptions options = new ChromeOptions();
-			// options.addArguments("headless");
+			 options.addArguments("headless");
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver(options);
 			driver.manage().window().maximize();
