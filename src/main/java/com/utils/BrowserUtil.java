@@ -20,12 +20,6 @@ public class BrowserUtil {
 	@Parameters({ "browserName" })
 	@BeforeMethod(alwaysRun = true)
 	public void openBroser(String browserName) {
-		
-		// you can also pass browser name from command line $ mvn test -DbrowserName=Firefox/Chrome
-			String cliBrowserName = System.getProperty("browserName");
-			if(cliBrowserName!=null) {
-			   browserName =cliBrowserName;
-			 }
 
 		if (browserName.toLowerCase().startsWith("c")) {
 
