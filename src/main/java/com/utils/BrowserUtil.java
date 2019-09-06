@@ -25,7 +25,7 @@ public class BrowserUtil {
 
 			ChromeOptions options = new ChromeOptions();
 		// 	below line of code to run your tests in headless mode
-			 options.addArguments("headless");
+			// options.addArguments("headless");
 			 
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver(options);
@@ -36,7 +36,7 @@ public class BrowserUtil {
 			
 			FirefoxOptions options = new FirefoxOptions();
 		// 	below line of code to run your tests in headless mode
-			 options.addArguments("-headless");
+			// options.addArguments("-headless");
 			 
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver(options);
