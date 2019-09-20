@@ -24,6 +24,6 @@ Reports will generate under target folder
 
 ### Note
 
-Tests running in headless mode, comment `options.addArguments("headless");` in BrowserUtil.java to open browser.
+Tests running in headless mode, comment `options.addArguments("headless");` in BrowserUtil.java to see browser opening.
 
 
