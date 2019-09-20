@@ -22,4 +22,8 @@ clone this project, go into project folder and run below command
 
 Reports will generate under target folder
 
+### Note
+
+Tests running in headless mode, comment `options.addArguments("headless");` in BrowserUtil.java to open browser.
+
 

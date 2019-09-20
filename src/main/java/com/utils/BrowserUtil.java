@@ -25,7 +25,7 @@ public class BrowserUtil {
 
 			ChromeOptions options = new ChromeOptions();
 		// 	below line of code to run your tests in headless mode
-			// options.addArguments("headless");
+			 options.addArguments("headless");
 			 
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver(options);
